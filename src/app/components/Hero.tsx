@@ -19,7 +19,7 @@ export default function Hero() {
                 <p className="text-3xl sm:text-2xl md:text-3xl font-bold pb-8">
                     Reliable. Affordable. Local.
                 </p>
-                <a href="tel:+6316171415">
+                <a href="tel:+16316171415">
                     <button className="px-6 py-2 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-950 hover:cursor-pointer transition">
                     Call Now
                     </button>
