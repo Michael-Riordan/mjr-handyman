@@ -9,7 +9,7 @@ export default function WhoWeAre() {
             <section className="flex p-6 flex-col md:flex-row md:gap-10 sm:justify-self-center">
                 <ProfileCard 
                     name="Michael Riordan Jr."
-                    image="/ProfileCardImages/profile-photo-me.jpg"
+                    image="/ProfileCardImages/lucy&i.jpg"
                     description={`Using his knowledge and experience in different facets, Michael Jr. has built everything from custom cabinets to an off-grid solar-powered camper van. He's worked as a cabinetmaker, and previously served as the on-call handyman for two residential buildings in New York City. He brings a problem-solving mindset, quality craftsmanship, and a deep respect for your home.`}
                 />
                 <ProfileCard
