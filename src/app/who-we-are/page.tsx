@@ -14,7 +14,7 @@ export default function WhoWeAre() {
                 />
                 <ProfileCard
                     name="Michael Riordan Sr."
-                    image="/ProfileCardImages/no-photo.jpg"
+                    image="/ProfileCardImages/dad-profile-photo.jpg"
                     description={`With over 30 years of experience as an operating engineer in NYC, Michael Sr. has overseen the mechanical and cosmetic upkeep of major commercial buildings as the chief operating engineer for high end tenants, such as Red Bull and X (formerly Twitter). From HVAC systems and electrical infrastructure to drywall repairs and finishing work, he’s done it all. His deep expertise ensures every job is handled with precision, safety, and lasting quality.`}
                 />
             </section>

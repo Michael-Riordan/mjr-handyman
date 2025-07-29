@@ -20,7 +20,7 @@ export default function ProjectCard({ images, title, description }: ProjectCardP
         <div className="rounded-2xl shadow-md p-4 bg-white w-full max-w-md mb-10">
             <h3 className="text-xl font-bold mb-2 text-center text-blue-900">{title}</h3>
             
-            <div className="relative h-60 w-full mb-4 overflow-hidden rounded-lg">
+            <div className="relative h-80 w-full mb-4 overflow-hidden rounded-lg">
                 <Image 
                     src={images[currentImage]}
                     alt={`Slide ${currentImage + 1}`}
