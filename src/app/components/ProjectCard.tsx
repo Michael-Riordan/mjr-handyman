@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 type ProjectCardProps = {
     images: string[];
-    title: string;
+    title?: string;
     description: string;
   };
 

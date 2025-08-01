@@ -13,10 +13,10 @@ export default function Hero() {
           />
         
             <div className="absolute inset-0 flex flex-col items-center text-white bg-black/40">
-                <h1 className="sm:text-4xl md:text-5xl font-bold pt-20 pb-6">
+                <h1 className="text-4xl md:text-5xl font-bold pt-20 pb-6">
                     A Father Son Team You Can Trust
                 </h1>
-                <h2 className="sm:text-2xl md:text-3xl font-bold pb-8">
+                <h2 className= "text-2xl md:text-3xl font-bold pb-8">
                     Reliable. Affordable. Local.
                 </h2>
                 <a 
