@@ -31,8 +31,8 @@ export default function ProjectsSection() {
                     <div className="snap-center shrink-0 w-[90vw] max-w-xs px-2">
                         <ProjectCard
                             images={[
-                                "/ProjectCardImages/shelf-room2-before.jpg",
-                                "/ProjectCardImages/shelf-room2-after.jpg"
+                                "/ProjectCardImages/shelf-room2-before.JPG",
+                                "/ProjectCardImages/shelf-room2-after.JPG"
                             ]}
                             description={`Mounted a fun, kid-friendly shelf for books and toys.`}
                         />
