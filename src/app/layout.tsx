@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MJR² Handyman Services",
   description: "Site for MJR² Handyman Services",
+  icons: {
+    icon: "/logo.png", // or "/favicon.png", or even an array of sizes
+  },
 };
 
 export default function RootLayout({
