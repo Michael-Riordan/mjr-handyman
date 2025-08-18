@@ -5,7 +5,7 @@ export default function Quote() {
     const [state, handleSubmit] = useForm("movlzoyg");
 
     if (state.succeeded) {
-        return <p className="text-blue-900 text-2xl text-center h-screen mt-20">Thanks for reaching out! We'll get back to you shortly!</p>;
+        return <p className="text-blue-900 text-2xl text-center h-screen mt-20">{"Thanks for reaching out! We'll get back to you shortly!"}</p>;
     }
 
     return (
