@@ -1,9 +1,10 @@
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
     return (
-        <div className="relative w-full h-[400px] sm:h-[400px] md:h-[500px] text-center">
+        <div className="relative w-full h-[500px] sm:h-[400px] md:h-[500px] text-center">
           <Image 
             src={"/tools-wallpaper.jpg"}
             alt="Tools Spread Across Table"
@@ -20,19 +21,27 @@ export default function Hero() {
                     Reliable. Affordable. Local.
                 </h2>
                 <h3 className="text-center text-lg text-white font-bold pb-2 px-2 md:pb-6 md:text-2xl">
-                    Proudly serving homes across the Valley. Call or text today for your free quote!
+                    Proudly serving homes across the Valley.
                 </h3>
                 <a 
                     href="tel:+16316171415"
                     className="md:hidden"
                 >
-                    <button className="px-6 py-2 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-950 hover:cursor-pointer transition">
+                    <button className="px-6 py-2 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-950 hover:cursor-pointer transition mt-4">
                     Call Now
                     </button>
                 </a>
                 <span className="hidden md:inline text-white text-3xl font-semibold">
                     Call or Text: (631) 617-1415
                 </span>
+                <p className="text-xl font-bold m-2">Or</p>
+                <Link 
+                    href="/quote"
+                >
+                    <button className="px-6 py-2 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-950 hover:cursor-pointer transition">
+                    Get a Quote
+                    </button>
+                </Link>
             </div>
         </div>
     );

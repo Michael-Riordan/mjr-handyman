@@ -5,7 +5,7 @@ export default function ProjectsSection() {
         <section className="bg-gray-50 py-10 px-4 space-y-12">
             {/* Misc Projects Section */}
             <div>
-                <h2 className="text-xl font-semibold mb-4 px-2 text-blue-900 underline">Misc Projects</h2>
+                <h2 className="text-2xl font-semibold mb-6 px-2 text-blue-900 underline text-center">Misc Projects</h2>
                 <div className="flex gap-6 overflow-x-auto px-2 scroll-smooth snap-x snap-mandatory">
                     <div className="snap-center shrink-0 w-[90vw] max-w-xs px-2">
                         <ProjectCard
@@ -55,7 +55,7 @@ export default function ProjectsSection() {
 
             {/* Decorative Moldings Section */}
             <div>
-                <h2 className="text-xl font-semibold mb-4 px-2 text-blue-900 underline">Decorative Moldings</h2>
+                <h2 className="text-2xl font-semibold mb-4 px-2 text-blue-900 underline">Decorative Moldings</h2>
                 <div className="flex gap-6 overflow-x-auto px-2 scroll-smooth snap-x snap-mandatory">
                     <div className="snap-center shrink-0 w-[90vw] max-w-xs px-2">
                         <ProjectCard
@@ -84,7 +84,7 @@ export default function ProjectsSection() {
             
             {/* Section 1 */}
             <div>
-                <h2 className="text-xl font-semibold mb-4 px-2 text-blue-900 underline">Shelf Installation</h2>
+                <h2 className="text-2xl font-semibold mb-4 px-2 text-blue-900 underline">Shelf Installation</h2>
                 <div className="flex gap-6 overflow-x-auto px-2 scroll-smooth snap-x snap-mandatory">
                     <div className="snap-center shrink-0 w-[90vw] max-w-xs px-2">
                         <ProjectCard
