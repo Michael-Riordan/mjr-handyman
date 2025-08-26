@@ -31,9 +31,9 @@ export default function Nav() {
           </Link>
         </motion.div>
 
-        {/* Navigation Links */}
+        {/* Navigation Links + Quote Button */}
         <motion.div
-          className="flex items-center gap-8"
+          className="flex items-center gap-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
@@ -69,11 +69,15 @@ export default function Nav() {
             </li>
           </ul>
 
-          {/* CTA Button */}
-          <Link href="/quote" className="hidden sm:block">
-            <button className="px-4 py-2 bg-blue-900 text-white font-bold rounded-full shadow hover:bg-blue-950 transition">
+          {/* Sleek Get a Quote Button */}
+          <Link href="/quote">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-4 py-2 sm:px-5 sm:py-2.5 bg-blue-900 text-white font-semibold rounded-full shadow-md hover:bg-blue-950 transition-all text-sm sm:text-base"
+            >
               Get a Quote
-            </button>
+            </motion.button>
           </Link>
         </motion.div>
       </nav>
