@@ -3,8 +3,14 @@
 import ProjectCard from "./ProjectCard";
 import { X } from "lucide-react";
 
+type Project = {
+  title?: string;
+  images: string[];
+  description: string;
+};
+
 type LightboxModalProps = {
-  card: any;
+  card: Project;
   currentImage: number;
   onClose: () => void;
 };
@@ -13,9 +19,9 @@ export default function LightboxModal({ card, currentImage, onClose }: LightboxM
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
-      onClick={onClose} // click outside closes modal
+      onClick={onClose}
     >
-      {/* Close button fixed */}
+      {/* Close button */}
       <button
         onClick={onClose}
         className="fixed top-4 right-4 text-white p-3 rounded-full bg-black/50 hover:bg-black/70 z-50 shadow-lg"
@@ -23,16 +29,12 @@ export default function LightboxModal({ card, currentImage, onClose }: LightboxM
         <X className="w-7 h-7" />
       </button>
 
-      {/* Card container */}
+      {/* Modal card container */}
       <div
         className="relative w-[95vw] max-w-3xl"
-        onClick={(e) => e.stopPropagation()} // clicks inside card won't close
+        onClick={(e) => e.stopPropagation()}
       >
-        <ProjectCard
-          {...card}
-          initialImage={currentImage}
-          isModal
-        />
+        <ProjectCard {...card} initialImage={currentImage} isModal />
       </div>
     </div>
   );
