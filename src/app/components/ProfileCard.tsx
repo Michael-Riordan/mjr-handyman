@@ -1,28 +1,33 @@
 import Image from "next/image";
 
 type ProfileCardProps = {
-    name: string,
-    image: string,
-    description: string,
-}
+  name: string;
+  image: string;
+  description: string;
+};
 
-export default function ProfileCard({name, image, description }: ProfileCardProps) {
-    return (
-        <div className="rounded-2xl shadow-md p-4 bg-gray-50 w-full max-w-md mb-10">
-            <h3 className="text-xl font-bold mb-2 text-center text-blue-900">{name}</h3>
-            <div className="relative h-100 w-full mb-4 overflow-hidden rounded-lg">
-                <Image 
-                    src={image}
-                    alt={`Profile Photo`}
-                    fill
-                    className="object-cover rounded-lg"
-                />
-            </div>
-            <div className=" w-full">
-                <p className="text-sm text-blue-900 font-semibold md:text-center">
-                    {description}
-                </p>
-            </div>
-        </div>
-    );
+export default function ProfileCard({ name, image, description }: ProfileCardProps) {
+  return (
+    <div className="rounded-2xl shadow-lg p-6 bg-white w-full max-w-sm mb-10 hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+      {/* Name */}
+      <h3 className="text-2xl font-extrabold mb-4 text-center text-blue-900 tracking-tight">
+        {name}
+      </h3>
+
+      {/* Image */}
+      <div className="relative w-40 h-40 mx-auto mb-6 overflow-hidden rounded-full border-4 border-blue-200 shadow-md">
+        <Image 
+          src={image}
+          alt={`${name} Profile Photo`}
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      {/* Description */}
+      <p className="text-base text-blue-800 font-medium text-center leading-relaxed px-2">
+        {description}
+      </p>
+    </div>
+  );
 }
