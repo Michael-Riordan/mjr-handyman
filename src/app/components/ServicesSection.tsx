@@ -1,6 +1,6 @@
 'use client';
 import { CheckCircle } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 export default function ProjectSection() {
   const servicesLeft = [
@@ -23,19 +23,10 @@ export default function ProjectSection() {
     "Starlink Installation"
   ];
 
-  // Animation variant for each service
-  const serviceVariants: any = {
+  // Fade-in variant
+  const fadeInVariant: Variants = {
     hidden: { opacity: 0, scale: 0.95 },
-    visible: {
-      opacity: 1,
-      scale: [1, 1.05, 1], // subtle grow/shrink
-      transition: {
-        duration: 1.2,
-        repeat: Infinity,
-        repeatDelay: 2,
-        ease: "easeInOut",
-      }
-    }
+    visible: { opacity: 1, scale: 1 }
   };
 
   return (
@@ -52,11 +43,14 @@ export default function ProjectSection() {
               <motion.li
                 key={idx}
                 className="flex items-center gap-3 text-lg font-medium text-blue-900 hover:text-blue-700 transition-colors"
-                variants={serviceVariants}
+                variants={fadeInVariant}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                style={{ originY: 0.5 }}
+                animate={{
+                  scale: [1, 1.08, 1],
+                  transition: { duration: 4, repeat: Infinity, repeatDelay: 5, ease: "easeInOut" },
+                }}
               >
                 <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0" />
                 {service}
@@ -70,11 +64,14 @@ export default function ProjectSection() {
               <motion.li
                 key={idx}
                 className="flex items-center gap-3 text-lg font-medium text-blue-900 hover:text-blue-700 transition-colors"
-                variants={serviceVariants}
+                variants={fadeInVariant}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
-                style={{ originY: 0.5 }}
+                animate={{
+                  scale: [1, 1.08, 1],
+                  transition: { duration: 4, repeat: Infinity, repeatDelay: 5, ease: "easeInOut" },
+                }}
               >
                 <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0" />
                 {service}
