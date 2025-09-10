@@ -4,6 +4,7 @@
 import Hero from "./components/Hero";
 import ServicesSection from "./components/ServicesSection"
 import ProjectsSection from "./components/ProjectSection";
+import Facebook from "./components/Facebook";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <ServicesSection />
         <ProjectsSection />
+        <Facebook />
       </main>
     </div>
   );

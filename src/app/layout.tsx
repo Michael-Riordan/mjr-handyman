@@ -32,6 +32,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+            async
+            defer
+            crossOrigin="anonymous"
+            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"
+        ></script>
         <Nav/>
         {children}
         <Footer/>
