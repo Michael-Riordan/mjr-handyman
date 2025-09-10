@@ -1,3 +1,7 @@
 interface Window {
-  FB: any;
+  FB?: {
+    XFBML: {
+      parse: () => void;
+    };
+  };
 }
