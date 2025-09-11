@@ -70,6 +70,27 @@ export default function ProjectsSection() {
     },
   ];
 
+  const furnitureRestoration: Project[] = [
+    {
+      title: "Furniture Assembly",
+      images: ["/ProjectCardImages/ikea-before.jpg", "/ProjectCardImages/ikea-after.jpg"],
+      description:
+        "Expertly assembled furniture, ensuring quality and durability."
+    },
+    {
+      title: "Custom Furniture Refurbishing",
+      images: ["/ProjectCardImages/dresser-before.jpeg", "/ProjectCardImages/better-dresser-after.jpeg"],
+      description:
+        "Sanding and painting with a stained and poly-finished top, designed to customer’s taste.",
+    },
+    {
+      title: "Chair Fabric Replacement",
+      images: ["/ProjectCardImages/chair-repair-before.jpg", "/ProjectCardImages/chair-repair-after.jpg"],
+      description:
+        "Replaced the worn and torn fabric on a lawn chair."
+    },
+  ]
+
   const miscProjects: Project[] = [
     {
       title: "LED Mirror Installation",
@@ -78,21 +99,27 @@ export default function ProjectsSection() {
         "Installation of two LED mirrors with clean wiring for modern bathroom lighting.",
     },
     {
-      title: "Ceiling Fan Replacement",
-      images: ["/ProjectCardImages/living-room-before.jpg", "/ProjectCardImages/ceiling-fan.jpeg"],
-      description: "Replacement of remote-controlled ceiling fan on 10-foot ceiling.",
-    },
-    {
       title: "Gate Repair",
       images: ["/ProjectCardImages/before-fence.jpeg", "/ProjectCardImages/after-fence.jpg"],
       description:
-        "Replaced rotted slats with treated wood to restore strength and appearance.",
+      "Replaced rotted slats with treated wood to restore strength and appearance.",
     },
     {
-      title: "Custom Furniture Refurbishing",
-      images: ["/ProjectCardImages/dresser-before.jpeg", "/ProjectCardImages/better-dresser-after.jpeg"],
+      title: "Bathroom Exhaust Fan Replacement",
+      images: ["/ProjectCardImages/fan-vent-before.jpg", "/ProjectCardImages/fan-vent-after.jpg"],
       description:
-        "Sanding and painting with a stained and poly-finished top, designed to customer’s taste.",
+        "Removed and replaced a faulty bathroom exhaust fan for improved ventilation."
+    },
+    {
+      title: "Sliding Door Window Treatment Installation",
+      images: ["/ProjectCardImages/window-treatment-before.jpg", "/ProjectCardImages/window-treatments-closed.jpg", "/ProjectCardImages/window-treatment-after.jpg"],
+      description:
+      "Installed retractable and folding fabric window coverings.",
+    },
+    {
+      title: "Ceiling Fan Replacement",
+      images: ["/ProjectCardImages/living-room-before.jpg", "/ProjectCardImages/ceiling-fan.jpeg"],
+      description: "Replacement of remote-controlled ceiling fan on 10-foot ceiling.",
     },
   ];
 
@@ -116,6 +143,16 @@ export default function ProjectsSection() {
           </h2>
           <div className="flex gap-6 overflow-x-auto px-2 scroll-smooth snap-x snap-mandatory hide-scrollbar">
             {renderProjects(decorativeMoldings)}
+          </div>
+        </div>
+
+        {/* Furniture Restorations */}
+        <div>
+          <h2 className="text-3xl font-bold text-center text-blue-900 mb-8 tracking-tight">
+            Furniture Assembly/Restoration
+          </h2>
+          <div className="flex gap-6 overflow-x-auto px-2 scroll-smooth snap-x snap-mandatory hide-scrollbar">
+            {renderProjects(furnitureRestoration)}
           </div>
         </div>
 
