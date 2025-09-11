@@ -33,12 +33,12 @@ export default function FacebookFeed() {
 
   return (
     <div className="flex justify-center pt-20">
-      <div className="w-full max-w-screen">
+      <div className="w-full max-w-screen-sm">
         <div
           className="fb-page w-full"
           data-href="https://www.facebook.com/mjrsquaredllc"
           data-tabs="timeline"
-          data-width="500"
+          data-width="360"
           data-height="600"
           data-small-header="false"
           data-adapt-container-width="true"
