@@ -45,6 +45,19 @@ export default function Footer() {
         <p className="text-sm text-blue-900 font-medium mt-4">
           © {new Date().getFullYear()} MJR² Handyman Services. All Rights Reserved.
         </p>
+
+        {/* Site Credit */}
+        <p className="text-xs text-gray-500">
+          Website by{" "}
+          <a
+            href="https://middlepathdigital.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-blue-900 transition"
+          >
+            Middle Path Digital
+          </a>
+        </p>
       </div>
     </footer>
   );
