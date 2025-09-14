@@ -45,7 +45,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          Proudly serving homes across the Valley. Free estimates. No hidden fees.
+          Proudly serving homes across the Valley. On-Time Service, Every Time.
         </motion.p>
 
         {/* CTAs */}
