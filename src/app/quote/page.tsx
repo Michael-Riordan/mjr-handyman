@@ -21,7 +21,7 @@ export default function Quote() {
         
         {/* Headline */}
         <h1 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-2">
-          Get Your Free Quote
+          Contact Us Today
         </h1>
         <p className="text-center text-blue-800 mb-8 font-medium">
           Fast, reliable, and transparent pricing — no hidden fees.
@@ -93,7 +93,7 @@ export default function Quote() {
             disabled={state.submitting}
             className="w-full bg-blue-900 text-white font-bold rounded-xl py-3 hover:bg-blue-950 transition disabled:opacity-60"
           >
-            Get My Free Quote
+            Contact Us Today
           </button>
         </form>
 
