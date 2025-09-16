@@ -100,9 +100,9 @@ export default function ProjectsSection() {
     },
     {
       title: "Stove Hood Installation",
-      images: ["/ProjectCardImages/stove-hood-before.jpg", "/ProjectCardImages/stove-hood-zoomed-in.jpeg"],
+      images: ["/ProjectCardImages/stove-hood-before.jpg", "/ProjectCardImages/stove-hood-after.jpeg"],
       description:
-        "Installation of new stove hood and duct in recently remodeled kitchen."
+        "Installation of new stove hood and duct in recently remodeled kitchen.",
     },
     {
       title: "Gate Repair",
