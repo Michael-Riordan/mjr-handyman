@@ -99,6 +99,12 @@ export default function ProjectsSection() {
         "Installation of two LED mirrors with clean wiring for modern bathroom lighting.",
     },
     {
+      title: "Stove Hood Installation",
+      images: ["/ProjectCardImages/stove-hood-before.jpg", "/ProjectCardImages/stove-hood-zoomed-in.jpeg"],
+      description:
+        "Installation of new stove hood and duct in recently remodeled kitchen."
+    },
+    {
       title: "Gate Repair",
       images: ["/ProjectCardImages/before-fence.jpeg", "/ProjectCardImages/after-fence.jpg"],
       description:
