@@ -58,7 +58,7 @@ export default function Nav() {
           </a>
 
           {/* Menu Links */}
-          <ul className="hidden md:flex space-x-6">
+          <ul className="md:flex space-x-6">
             <li>
               <Link
                 href="/who-we-are"
