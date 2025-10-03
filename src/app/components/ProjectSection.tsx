@@ -23,9 +23,29 @@ export default function ProjectsSection() {
     setModalProject(null);
     setModalImage(0);
   };
-
+  
   // Sample projects
   const decorativeMoldings: Project[] = [
+    {
+      images: [
+        "/ProjectCardImages/beforeAfterCollage.JPG",
+        "/ProjectCardImages/tv-before.jpg",
+        "/ProjectCardImages/tv-after.jpg",
+        "/ProjectCardImages/couch-before.jpg",
+        "/ProjectCardImages/couch-after.jpg",
+      ],
+      description: 
+        "Decorative moldings framing the TV and walls, adding depth and elegance to the living room."
+    },
+    {
+      images: [
+        "/ProjectCardImages/couchBeforeAfter.JPG",
+        "/ProjectCardImages/far-wall-before.jpg",
+        "/ProjectCardImages/far-wall-angleAfter.jpg",
+      ],
+      description:
+        "Decorative molding frames the doorway and picture walls, giving the space a refined, finished look."
+    },
     {
       images: [
         "/ProjectCardImages/living-room-before.jpg",
